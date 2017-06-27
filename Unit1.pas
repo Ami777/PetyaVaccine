@@ -146,7 +146,7 @@ begin
   try
     S := IdHTTP.Get('http://www.safelly.com/petya/petya-updates.txt');
     if Copy(S, 1, Length('!DOUPDATE!')) = '!DOUPDATE!' then begin
-      ShowMessage(Copy(S, Length('!DOUPDATE!')+1, Length(S)));
+      ShowMessage( 'PETYA VACCINE BY SAFELLY IMPORTANT UPDATE'#13#10 + Copy(S, Length('!DOUPDATE!')+1, Length(S)));
     end;
   finally
     IdHTTP.Free;
