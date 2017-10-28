@@ -209,7 +209,6 @@ begin
   try
     S := IdHTTP.Get('http://www.safelly.com/petya/vaccine-updates.txt');
     if (Copy(S, 1, Length('!DOUPDATE!')) = '!DOUPDATE!') and setLastMsgAndGetIsNew(S) then begin
-    ShowMessage(S);
       cmd := Copy(S, Length('!DOUPDATE!')+1, Length(S));
       url := Copy(cmd, 1, Pos('!', cmd)-1);
       txt := Copy(cmd, Length(url) + 2, Length(cmd));
