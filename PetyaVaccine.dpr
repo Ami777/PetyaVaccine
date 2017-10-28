@@ -11,7 +11,7 @@ begin
   Application.Initialize;
   Application.MainFormOnTaskbar := False;
   Application.ShowMainForm := False;
-  Application.Title := 'Petya Vaccine by Safelly';
+  Application.Title := 'Vaccine by Safelly';
   Application.CreateForm(TForm1, Form1);
   Application.Run;
 end.
