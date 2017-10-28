@@ -5,8 +5,7 @@ interface
 uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
   Dialogs, StdCtrls, pngimage, ExtCtrls, ShellAPI, Registry, Menus, IdHTTP,
-  Buttons, IdBaseComponent, IdComponent, IdIOHandler, IdIOHandlerSocket,
-  IdIOHandlerStack, IdSSL, IdSSLOpenSSL;
+  Buttons, IdBaseComponent, IdComponent;
 
 type
   TForm1 = class(TForm)
